@@ -10,13 +10,13 @@ const routes = express.Router();
 routes.post('/session', SessionController.create)
 
 // Ong
-routes.post('/ongs', OngController.create);
+routes.post('/ongs/create', OngController.create);
 routes.get('/ongs', OngController.show);
 routes.put('/ongs/:ongId', OngController.update);
 routes.delete('/ongs/:ongId', OngController.destroy);
 
 //Incident
-routes.post('/ong/incident', IncidentController.create);
+routes.post('/ong/incident/create', IncidentController.create);
 routes.get('/ong/incident', IncidentController.index);
 routes.delete('/ong/incident/:incidentId', IncidentController.destroy);
 
